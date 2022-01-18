@@ -2,22 +2,51 @@ package calculadora;
 
 import java.util.Scanner;
 
-public class Claculadora {
+/**
+ * 
+ * @author z3r0x
+ * 
+ */
+public class Calculadora {
 
 	static Scanner teclado = new Scanner(System.in);
 
+	/**
+	 * 
+	 * @param num1
+	 * @param num2
+	 * @return Devuelve la suma de 2 numeros
+	 */
     static double sumar(double num1, double num2) {
         return num1 + num2;
     }
 
+    /**
+     * 
+     * @param num1
+     * @param num2
+     * @return Devuelve la resta de 2 numeros
+     */
     static double restar(double num1, double num2) {
         return num1 - num2;
     }
 
+    /**
+     * 
+     * @param num1
+     * @param num2
+     * @return Devuelve la multiplicacion de 2 numeros
+     */
     static double multiplicar(double num1, double num2) {
         return num1 * num2;
     }
 
+    /**
+     * 
+     * @param num1
+     * @param num2
+     * @return Devuelve la division de 2 numeros
+     */
     static double dividir(double num1, double num2) {
         double resultado = 0;
         
@@ -30,6 +59,9 @@ public class Claculadora {
         return resultado;
     }
     
+    /**
+     * Funcion que muestra un menu con 5 opciones
+     */
     static public void menu() {
         System.out.println(
     		"Introduce una opcion: \n"
@@ -42,6 +74,11 @@ public class Claculadora {
 
     }
 	
+    /**
+     * 
+     * @param args Argumentos de la funcion principal
+     * 
+     */
 	public static void main(String[] args) {
         System.out.print("Introduce el 1º numero: ");
         double num1 = teclado.nextDouble();
